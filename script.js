@@ -18,12 +18,11 @@ if (etaUtente < 18) {
   sconto=0;
 }
 
-// var b = biglietto.toFixed(1);
-// var s = sconto.toFixed(2);
- Math.floor(biglietto);
- Math.floor(sconto);
+var totale = (biglietto-sconto).toFixed(2);
 
+// var b = biglietto.toFixed(2);
+// var s = sconto.toFixed(2);
 
 console.log(biglietto);
 console.log(sconto);
-document.getElementById('titolo').innerHTML = "Il prezzo del biglietto è di " + ( biglietto - sconto ) + "€";
+document.getElementById('titolo').innerHTML = "Il prezzo del biglietto è di " + totale + "€";
